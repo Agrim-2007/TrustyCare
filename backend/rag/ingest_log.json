@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-04-23T23:26:41.818521",
+  "scraped_pages": 0,
+  "seed_documents_used": 11,
+  "total_chunks": 37,
+  "chunk_config": {
+    "chunk_size": 400,
+    "chunk_overlap": 80,
+    "separators": [
+      "\n\n",
+      "\n",
+      ". ",
+      "? ",
+      "! ",
+      " "
+    ]
+  },
+  "embedding_model": "all-MiniLM-L6-v2",
+  "index_type": "FAISS IndexFlatIP (cosine)",
+  "vectorstore_path": "/Users/agrimkumarmalhotra/Desktop/trustycare/backend/rag/vectorstore"
+}

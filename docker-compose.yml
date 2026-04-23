@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: trustybot-backend
+    ports:
+      - "8000:8000"
+    environment:
+      # Inject your Groq API key here or via a .env file
+      - GROQ_API_KEY=${GROQ_API_KEY}
+      - FRONTEND_URL=http://localhost:8080
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        # Nginx will proxy /api to the backend internally
+        - VITE_API_URL=/api/chat
+    container_name: trustybot-frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+    restart: unless-stopped

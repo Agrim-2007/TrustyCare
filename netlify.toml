@@ -1,0 +1,17 @@
+[build]
+  # The directory that contains the source code for the frontend
+  base = "frontend"
+  # The command to build the React app
+  command = "npm run build"
+  # The directory where Vite outputs the built files
+  publish = "dist"
+
+[build.environment]
+  # Specify Node version for Netlify
+  NODE_VERSION = "18"
+
+# Redirect all traffic to index.html for React Router / SPA support
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
