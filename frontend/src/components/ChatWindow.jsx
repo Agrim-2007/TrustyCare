@@ -3,11 +3,6 @@ import MessageBubble from './MessageBubble.jsx';
 import TypingIndicator from './TypingIndicator.jsx';
 import HandoffCard from './HandoffCard.jsx';
 
-/**
- * ChatWindow — scrollable message list with welcome state.
- * Handles auto-scroll, welcome chips, and message rendering
- * with type-specific components (bubble, handoff, refusal).
- */
 export default function ChatWindow({ messages, isLoading, starterChips, onChipClick }) {
   const bottomRef = useRef(null);
   const containerRef = useRef(null);

@@ -7,7 +7,6 @@ Each node reads from and writes to this shared state object.
 
 from typing import TypedDict, Optional, List, Dict, Any
 
-
 class TrustyCareState(TypedDict):
     """
     State object for the TrustyBot LangGraph agent.
