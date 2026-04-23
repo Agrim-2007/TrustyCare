@@ -1,4 +1,4 @@
-# TrustyBot — Evaluation Results
+# SlayBot — Evaluation Results
 
 > **Eval harness:** `backend/eval/harness.py`  
 > **Judge model:** Groq LLaMA 3.3 70B (temperature=0.1)  
@@ -44,7 +44,7 @@
 | Emotion Acknowledgment | 25 | Names the specific underlying emotion |
 | Cultural Accuracy | 20 | Understands arranged marriage dynamics |
 | Narrative Reframe | 20 | Shifts from "hurts the match" → "protects the match" |
-| Grounding | 15 | Zero invented claims, grounded in TrustyCare's content |
+| Grounding | 15 | Zero invented claims, grounded in Slay's content |
 | Action/Forward Motion | 10 | Ends with specific next step or good question |
 | Tone | 10 | Warm, direct, non-clinical, non-preachy |
 

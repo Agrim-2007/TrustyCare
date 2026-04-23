@@ -6,7 +6,7 @@ const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/chat';
  * Custom hook for chat state management and API communication.
  *
  * Manages conversation history, loading state, and API calls
- * to the TrustyBot FastAPI backend.
+ * to the SlayBot FastAPI backend.
  */
 export function useChat() {
   const [messages, setMessages] = useState([]);

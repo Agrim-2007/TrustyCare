@@ -5,7 +5,7 @@
  */
 export default function TypingIndicator() {
   return (
-    <div className="typing-row" role="status" aria-label="TrustyCare is typing">
+    <div className="typing-row" role="status" aria-label="Slay is typing">
       <div className="bot-avatar-small" aria-hidden="true">💜</div>
       <div className="typing-bubble">
         <span className="typing-dot" />

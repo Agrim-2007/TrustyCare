@@ -20,7 +20,7 @@ export default function ChatWindow({ messages, isLoading, starterChips, onChipCl
       <div className="chat-window" ref={containerRef}>
         <div className="welcome-container">
           <div className="welcome-avatar" aria-hidden="true">💜</div>
-          <h2 className="welcome-title">Hey, I'm TrustyCare</h2>
+          <h2 className="welcome-title">Hey, I'm Slay</h2>
           <p className="welcome-text">
             I'm here to help you think through pre-marriage health screenings — 
             no pressure, no judgment, just a real conversation. What's on your mind?

@@ -1,5 +1,5 @@
 """
-LLM-as-Judge Scoring System for TrustyBot
+LLM-as-Judge Scoring System for SlayBot
 
 Uses a separate Groq call with the EVALUATOR_SYSTEM_PROMPT to score
 chatbot responses on a 0-100 rubric. Designed to be strict and

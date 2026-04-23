@@ -6,13 +6,13 @@
 export default function HandoffCard() {
   const handleBookClick = () => {
     // In production, this would open a booking flow or redirect
-    window.open('https://trustycare.com', '_blank', 'noopener,noreferrer');
+    window.open('https://slay.health', '_blank', 'noopener,noreferrer');
   };
 
   return (
     <div className="handoff-card" id="handoff-card">
       <div className="handoff-icon" aria-hidden="true">🤝</div>
-      <div className="handoff-title">Talk to a TrustyCare Advisor</div>
+      <div className="handoff-title">Talk to a Slay Advisor</div>
       <div className="handoff-subtitle">
         Free 20-min call · Real person · No pressure
       </div>

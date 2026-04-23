@@ -1,6 +1,6 @@
-# TrustyBot — 100 Objections Brainstorm
+# SlayBot — 100 Objections Brainstorm
 
-> **Source:** Product research, cultural psychology analysis, arranged marriage forums, TrustyCare advisor patterns  
+> **Source:** Product research, cultural psychology analysis, arranged marriage forums, Slay advisor patterns  
 > **Audience:** South Asian diaspora (India, UAE, Singapore, US/UK) — arranged/semi-arranged marriage contexts  
 > **Format:** ID | Surface Statement | Psychological Dimension | Underlying Emotion
 
@@ -155,11 +155,11 @@
 | 94 | "Who are the doctors reviewing this? Are they trustworthy?" | Privacy | Distrust |
 | 95 | "What if the matchmaker or pandit finds out about the results?" | Privacy | Fear |
 | 96 | "Is my data shared with any third party?" | Privacy | Distrust |
-| 97 | "I've heard of data breaches. What makes TrustyCare different?" | Privacy | Distrust |
+| 97 | "I've heard of data breaches. What makes Slay different?" | Privacy | Distrust |
 | 98 | "Can I delete my data after getting the results?" | Privacy | Control |
 | 99 | "What if his family hacks into my results somehow?" | Privacy | Fear |
 | 100 | "I'm not comfortable with an 'AI' looking at my health information." | Privacy | Distrust |
 
 ---
 
-*Generated as part of the TrustyBot objection pipeline: 100 → 30 → 10*
+*Generated as part of the SlayBot objection pipeline: 100 → 30 → 10*

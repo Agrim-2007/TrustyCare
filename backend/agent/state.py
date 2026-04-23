@@ -1,5 +1,5 @@
 """
-TrustyBot Agent State Definition
+SlayBot Agent State Definition
 
 Defines the TypedDict state that flows through the LangGraph state machine.
 Each node reads from and writes to this shared state object.
@@ -7,9 +7,9 @@ Each node reads from and writes to this shared state object.
 
 from typing import TypedDict, Optional, List, Dict, Any
 
-class TrustyCareState(TypedDict):
+class SlayState(TypedDict):
     """
-    State object for the TrustyBot LangGraph agent.
+    State object for the SlayBot LangGraph agent.
 
     Flows through: classify → retrieve → generate → quality_gate → END
     """

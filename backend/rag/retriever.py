@@ -1,5 +1,5 @@
 """
-FAISS Retriever for TrustyBot
+FAISS Retriever for SlayBot
 
 Loads the persisted FAISS index and chunk metadata, then provides
 semantic search with optional metadata filtering.
@@ -15,9 +15,9 @@ import numpy as np
 VECTORSTORE_DIR = Path(__file__).resolve().parent / "vectorstore"
 
 
-class TrustyCareRetriever:
+class SlayRetriever:
     """
-    FAISS-based semantic retriever for TrustyBot.
+    FAISS-based semantic retriever for SlayBot.
     
     Uses sentence-transformers for query embedding and FAISS for
     cosine similarity search. Supports metadata filtering by
@@ -38,7 +38,7 @@ class TrustyCareRetriever:
         import faiss
         from sentence_transformers import SentenceTransformer
 
-        index_path = VECTORSTORE_DIR / "trustycare_health.index"
+        index_path = VECTORSTORE_DIR / "slay_health.index"
         metadata_path = VECTORSTORE_DIR / "chunks_metadata.json"
 
         if not index_path.exists() or not metadata_path.exists():
@@ -151,4 +151,4 @@ class TrustyCareRetriever:
 
 
 # Module-level singleton for reuse across the application
-retriever = TrustyCareRetriever()
+retriever = SlayRetriever()

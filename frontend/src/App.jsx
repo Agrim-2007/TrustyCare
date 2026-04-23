@@ -45,7 +45,7 @@ export default function App() {
         <div className="header-content">
           <div className="header-avatar" aria-hidden="true">💜</div>
           <div className="header-info">
-            <h1 className="header-title">TrustyCare</h1>
+            <h1 className="header-title">Slay</h1>
             <div className="header-status">
               <span className="status-dot" aria-hidden="true"></span>
               <span className="header-subtitle">Your health companion</span>
@@ -91,7 +91,7 @@ export default function App() {
 
       {/* Footer */}
       <div className="powered-by">
-        Powered by <a href="https://trustycare.com" target="_blank" rel="noopener noreferrer">TrustyCare</a>
+        Powered by <a href="https://slay.health" target="_blank" rel="noopener noreferrer">Slay</a>
       </div>
     </div>
   );

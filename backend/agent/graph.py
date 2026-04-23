@@ -1,7 +1,7 @@
 """
-TrustyBot LangGraph Agent Graph
+SlayBot LangGraph Agent Graph
 
-Builds the state machine that powers the TrustyBot conversation pipeline.
+Builds the state machine that powers the SlayBot conversation pipeline.
 
 Graph flow:
   classify → [route] → retrieve → generate → quality_gate → [regenerate] → END
@@ -12,7 +12,7 @@ Graph flow:
 
 from langgraph.graph import StateGraph, END
 
-from agent.state import TrustyCareState
+from agent.state import SlayState
 from agent.nodes import (
     classify_message,
     retrieve_context,
@@ -26,13 +26,13 @@ from agent.nodes import (
 )
 
 
-def build_trustycare_graph():
+def build_slay_graph():
     """
-    Build and compile the TrustyBot LangGraph state machine.
+    Build and compile the SlayBot LangGraph state machine.
 
-    Returns a compiled graph that can be invoked with a TrustyCareState dict.
+    Returns a compiled graph that can be invoked with a SlayState dict.
     """
-    graph = StateGraph(TrustyCareState)
+    graph = StateGraph(SlayState)
 
     # ── Define nodes ──────────────────────────────────────────────────
     graph.add_node("classify", classify_message)
@@ -89,4 +89,4 @@ def build_trustycare_graph():
 
 
 # Module-level compiled graph instance
-trustycare_graph = build_trustycare_graph()
+slay_graph = build_slay_graph()

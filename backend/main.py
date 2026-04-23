@@ -1,5 +1,5 @@
 """
-TrustyBot FastAPI Application
+SlayBot FastAPI Application
 
 Main API server for the objection-handling chatbot.
 
@@ -27,8 +27,8 @@ if not os.getenv("GROQ_API_KEY"):
 # ── FastAPI App ─────────────────────────────────────────────────────────
 
 app = FastAPI(
-    title="TrustyBot API",
-    description="Objection-handling chatbot for TrustyCare pre-marriage health assessments",
+    title="SlayBot API",
+    description="Objection-handling chatbot for Slay pre-marriage health assessments",
     version="1.0.0",
 )
 
@@ -73,7 +73,7 @@ class ChatRequest(BaseModel):
 
 
 class ChatResponse(BaseModel):
-    response: str = Field(..., description="TrustyBot's response")
+    response: str = Field(..., description="SlayBot's response")
     category: str = Field(..., description="Classified category of the user's message")
     handoff_triggered: bool = Field(
         default=False, description="Whether a handoff to advisor was triggered"
@@ -94,7 +94,7 @@ async def health_check():
     """Health check endpoint."""
     return {
         "status": "healthy",
-        "service": "TrustyBot API",
+        "service": "SlayBot API",
         "model": "llama-3.3-70b-versatile",
     }
 
@@ -108,7 +108,7 @@ async def chat(request: ChatRequest):
     classify → retrieve → generate → quality_gate → response
     """
     # Lazy import to avoid slow startup
-    from agent.graph import trustycare_graph
+    from agent.graph import slay_graph
 
     conversation_id = request.conversation_id or str(uuid.uuid4())
 
@@ -143,7 +143,7 @@ async def chat(request: ChatRequest):
 
     try:
         # Run the LangGraph pipeline
-        result = trustycare_graph.invoke(initial_state)
+        result = slay_graph.invoke(initial_state)
 
         return ChatResponse(
             response=result.get("final_response", "I'm sorry, I couldn't generate a response. Please try again."),
@@ -166,7 +166,7 @@ async def chat(request: ChatRequest):
 @app.on_event("startup")
 async def startup_event():
     """Warm up the retriever on startup."""
-    print("🚀 TrustyBot API starting...")
+    print("🚀 SlayBot API starting...")
     try:
         from rag.retriever import retriever
         retriever._load()
@@ -175,4 +175,4 @@ async def startup_event():
         print("⚠ FAISS index not found. Run 'python rag/ingest.py' to build it.")
     except Exception as e:
         print(f"⚠ Error loading FAISS index: {e}")
-    print("🤖 TrustyBot API ready!")
+    print("🤖 SlayBot API ready!")

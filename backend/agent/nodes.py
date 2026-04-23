@@ -1,8 +1,8 @@
 """
-TrustyBot LangGraph Node Functions
+SlayBot LangGraph Node Functions
 
 Each function represents a node in the LangGraph state machine.
-Nodes read from and write to the shared TrustyCareState.
+Nodes read from and write to the shared SlayState.
 
 Pipeline: classify → retrieve → generate → quality_gate → [regenerate] → END
 """
@@ -192,7 +192,7 @@ def generate_response(state: dict) -> dict:
     # Check for handoff trigger
     handoff = any(
         phrase in response.lower()
-        for phrase in ["trustycare advisor", "set that up", "book now", "connect you"]
+        for phrase in ["slay advisor", "set that up", "book now", "connect you"]
     )
 
     return {
@@ -274,7 +274,7 @@ def regenerate_response(state: dict) -> dict:
 
     handoff = any(
         phrase in response.lower()
-        for phrase in ["trustycare advisor", "set that up", "book now", "connect you"]
+        for phrase in ["slay advisor", "set that up", "book now", "connect you"]
     )
 
     return {
@@ -294,7 +294,7 @@ def route_to_handoff(state: dict) -> dict:
     """
     handoff_message = (
         "That's a brave and beautiful step. "
-        "It sounds like you're ready to take the next step. I can connect you with a TrustyCare "
+        "It sounds like you're ready to take the next step. I can connect you with a Slay "
         "advisor — a real person who has helped hundreds of couples through this. They'll "
         "walk you through what the assessment involves and answer any questions. "
         "Want me to set that up?"
@@ -319,7 +319,7 @@ def route_to_refusal(state: dict) -> dict:
     """
     refusal_message = (
         "That's a question for a medical professional, not me — and I mean that in a good way. "
-        "What I can do is connect you with a TrustyCare advisor who works with doctors and can "
+        "What I can do is connect you with a Slay advisor who works with doctors and can "
         "give you a proper answer. Want me to do that?"
     )
 

@@ -1,4 +1,4 @@
-# TrustyBot — Top 30 Objections (Shortlisted)
+# SlayBot — Top 30 Objections (Shortlisted)
 
 > **Selection criteria applied to the original 100:**
 > 1. **Frequency** — How often this objection surfaces in real arranged marriage contexts
@@ -28,7 +28,7 @@
 |---|-----|-----------|--------------|
 | 7 | 16 | "My parents will never agree to this. They'll say I don't trust the match." | The canonical family objection. Tests the agent's ability to reframe toward family benefit. |
 | 8 | 18 | "If I push for this, the other family might withdraw the proposal." | Real consequence fear. This isn't hypothetical — proposals do get withdrawn. |
-| 9 | 20 | "The pandit already matched our kundalis. My family trusts that." | Horoscope vs. health compatibility — directly challenges TrustyCare's positioning. |
+| 9 | 20 | "The pandit already matched our kundalis. My family trusts that." | Horoscope vs. health compatibility — directly challenges Slay's positioning. |
 | 10 | 22 | "My parents put so much effort into finding this match. I can't risk it now." | Guilt-driven objection. The emotional labor of parents creates obligation. |
 | 11 | 26 | "In our community, the girl's side doesn't make demands." | Power dynamics objection — gendered, structural, deeply cultural. |
 
@@ -60,7 +60,7 @@
 | # | ID | Statement | Why Selected |
 |---|-----|-----------|--------------|
 | 19 | 51 | "Whatever is written in our destiny will happen. No test can change that." | Pure fatalism. Requires respecting the belief while reframing agency. |
-| 20 | 54 | "Our kundali match is perfect. That's all the compatibility we need." | Directly competes with TrustyCare's "health compatibility" narrative. Must bridge, not dismiss. |
+| 20 | 54 | "Our kundali match is perfect. That's all the compatibility we need." | Directly competes with Slay's "health compatibility" narrative. Must bridge, not dismiss. |
 | 21 | 58 | "Worrying about health before marriage is a bad omen." | Superstition objection — culturally loaded, cannot be dismissed as irrational. |
 
 ---
@@ -108,7 +108,7 @@
 | Process Anxiety | 12 | 3 | 25% |
 | Privacy | 12 | 2 | 17% |
 
-**Shame and Family Pressure dominate** — these are the most emotionally charged and culturally specific dimensions, which aligns with TrustyCare's target audience psychology.
+**Shame and Family Pressure dominate** — these are the most emotionally charged and culturally specific dimensions, which aligns with Slay's target audience psychology.
 
 ---
 

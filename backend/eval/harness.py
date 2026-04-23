@@ -1,5 +1,5 @@
 """
-TrustyBot Evaluation Harness
+SlayBot Evaluation Harness
 
 Runs all 15 test cases through the /chat endpoint, evaluates each response
 using the LLM-as-judge system, and produces an aggregated eval report.
@@ -209,7 +209,7 @@ def aggregate_results(results: list[dict]) -> dict:
 
 def main():
     print("=" * 60)
-    print("🧪 TrustyBot Evaluation Harness")
+    print("🧪 SlayBot Evaluation Harness")
     print(f"   Threshold: {PASS_THRESHOLD}/100")
     print(f"   API: {API_URL}")
     print("=" * 60)

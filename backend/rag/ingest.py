@@ -1,7 +1,7 @@
 """
-RAG Ingestion Pipeline for TrustyBot
+RAG Ingestion Pipeline for SlayBot
 
-Scrapes trustycare.com (with SPA fallback to seed content), chunks text,
+Scrapes slay.health (with SPA fallback to seed content), chunks text,
 generates embeddings using sentence-transformers, and persists a FAISS index.
 
 Usage:
@@ -34,12 +34,12 @@ CHUNK_CONFIG = {
 }
 
 PAGES_TO_SCRAPE = [
-    "https://trustycare.com/",
-    "https://trustycare.com/about",
-    "https://trustycare.com/how-it-works",
-    "https://trustycare.com/faq",
-    "https://trustycare.com/assessment",
-    "https://trustycare.com/blog",
+    "https://slay.health/",
+    "https://slay.health/about",
+    "https://slay.health/how-it-works",
+    "https://slay.health/faq",
+    "https://slay.health/assessment",
+    "https://slay.health/blog",
 ]
 
 VECTORSTORE_DIR = Path(__file__).resolve().parent / "vectorstore"
@@ -84,9 +84,9 @@ def scrape_page(url: str) -> str:
 
 
 def scrape_all_pages() -> list[dict]:
-    """Scrape all target pages from trustycare.com."""
+    """Scrape all target pages from slay.health."""
     scraped = []
-    print("\n🌐 Scraping trustycare.com pages...")
+    print("\n🌐 Scraping slay.health pages...")
 
     for url in PAGES_TO_SCRAPE:
         print(f"  → {url}")
@@ -169,7 +169,7 @@ def build_faiss_index(chunks: list[dict]):
 
     # Save index
     VECTORSTORE_DIR.mkdir(parents=True, exist_ok=True)
-    index_path = VECTORSTORE_DIR / "trustycare_health.index"
+    index_path = VECTORSTORE_DIR / "slay_health.index"
     faiss.write_index(index, str(index_path))
     print(f"💾 FAISS index saved to {index_path}")
 
@@ -214,7 +214,7 @@ def save_ingest_log(
 
 def main():
     print("=" * 60)
-    print("🚀 TrustyBot RAG Ingestion Pipeline")
+    print("🚀 SlayBot RAG Ingestion Pipeline")
     print("=" * 60)
 
     # Step 1: Try scraping

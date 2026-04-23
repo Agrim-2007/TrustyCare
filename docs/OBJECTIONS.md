@@ -1,6 +1,6 @@
-# TrustyBot — Final Top 10 Objections
+# SlayBot — Final Top 10 Objections
 
-> **Deliverable:** The 10 objections that TrustyCare's chatbot must handle exceptionally well.  
+> **Deliverable:** The 10 objections that Slay's chatbot must handle exceptionally well.  
 > **Selection criteria from 30 → 10:**
 > - Must cover at least 5 of the 8 psychological dimensions ✅ (covers 7/8)
 > - Must include at least 1 family-pressure, 1 shame, 1 fear-of-results ✅
@@ -71,7 +71,7 @@
 **Dimension:** Fear of Bad Results  
 **Underlying emotion:** Grief — anticipatory grief about fertility  
 **Why it's hard:** Fertility is the most emotionally loaded topic in this context. This objection carries potential grief, not just fear. Requires extreme emotional care.  
-**Reframe strategy:** Do NOT reframe aggressively. Acknowledge the weight first. Then: "TrustyCare doesn't diagnose fertility. It gives you a readiness picture — and if something needs attention, an advisor can walk you through options before it becomes a crisis."
+**Reframe strategy:** Do NOT reframe aggressively. Acknowledge the weight first. Then: "Slay doesn't diagnose fertility. It gives you a readiness picture — and if something needs attention, an advisor can walk you through options before it becomes a crisis."
 
 ---
 
@@ -107,5 +107,5 @@
 
 ---
 
-*This file is the primary reference for TrustyBot's objection library.*  
+*This file is the primary reference for SlayBot's objection library.*  
 *These objections are injected into the system prompt via RAG retrieval.*

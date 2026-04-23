@@ -1,4 +1,4 @@
-# TrustyBot — Objection Handling Agent for TrustyCare
+# SlayBot — Objection Handling Agent for Slay
 
 > Pre-marriage health assessment companion — warm, direct, culturally fluent.  
 > Stack: FastAPI + LangGraph + Groq + React + FAISS
@@ -7,11 +7,11 @@
 
 ## 🎯 What This Is
 
-TrustyBot is an AI-powered objection-handling chatbot for **TrustyCare** — India's first pre-marriage health compatibility platform. It helps people navigate the emotionally charged decision of whether to take a health screening before an arranged marriage.
+SlayBot is an AI-powered objection-handling chatbot for **Slay** — India's first pre-marriage health compatibility platform. It helps people navigate the emotionally charged decision of whether to take a health screening before an arranged marriage.
 
 **The core insight:** When someone objects to pre-marriage health screening, they're not asking "is this safe?" — they're asking **"will doing this cost me the marriage?"**
 
-TrustyBot handles objections with:
+SlayBot handles objections with:
 - **Emotional intelligence** — names the real feeling, not the surface question
 - **Cultural fluency** — understands izzat, family pressure, kundali matching
 - **Narrative reframing** — shifts from "this hurts the match" to "this protects the match"
@@ -90,14 +90,14 @@ npm install
 npm run dev
 ```
 
-Open **http://localhost:5173** — you'll see TrustyBot ready to chat.
+Open **http://localhost:5173** — you'll see SlayBot ready to chat.
 
 ---
 
 ## 📂 Project Structure
 
 ```
-trustycare/
+slay/
 ├── frontend/                  # React (Vite) — full-screen chat UI
 │   ├── src/
 │   │   ├── components/
@@ -119,12 +119,12 @@ trustycare/
 │   ├── agent/
 │   │   ├── graph.py           # LangGraph state machine
 │   │   ├── nodes.py           # All node functions
-│   │   ├── state.py           # TrustyCareState TypedDict
+│   │   ├── state.py           # SlayState TypedDict
 │   │   └── prompts.py         # All prompts + Groq configs
 │   ├── rag/
 │   │   ├── ingest.py          # Scraper + chunker + embedder
 │   │   ├── retriever.py       # FAISS similarity search
-│   │   ├── seed_content.py    # Authoritative TrustyCare content
+│   │   ├── seed_content.py    # Authoritative Slay content
 │   │   └── vectorstore/       # Persisted FAISS index
 │   ├── eval/
 │   │   ├── harness.py         # 15-test evaluation runner
@@ -228,5 +228,5 @@ The objection library was developed through a structured research process:
 
 ---
 
-*Built for TrustyCare Technologies Pvt Ltd — LLM Intern Assignment*  
+*Built for Slay Technologies Pvt Ltd — LLM Intern Assignment*  
 *Author: Agrim | Stack: FastAPI + LangGraph + Groq + React + FAISS*

@@ -5,7 +5,7 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    container_name: trustybot-backend
+    container_name: slaybot-backend
     ports:
       - "8000:8000"
     environment:
@@ -21,7 +21,7 @@ services:
       args:
         # Nginx will proxy /api to the backend internally
         - VITE_API_URL=/api/chat
-    container_name: trustybot-frontend
+    container_name: slaybot-frontend
     ports:
       - "8080:80"
     depends_on:

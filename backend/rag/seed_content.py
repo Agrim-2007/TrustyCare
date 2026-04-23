@@ -1,7 +1,7 @@
 """
-Seed Content for TrustyBot RAG Pipeline
+Seed Content for SlayBot RAG Pipeline
 
-Since trustycare.com is a React SPA that returns minimal content when scraped,
+Since slay.health is a React SPA that returns minimal content when scraped,
 this file contains the authoritative content from the website, verified via
 browser-rendered extraction and web research.
 
@@ -14,21 +14,21 @@ SEED_CONTENT = [
     # ──────────────────────────────────────────────────────────────
     {
         "content": """
-TrustyCare — Know Before You Say "I Do"
+Slay — Know Before You Say "I Do"
 
 India's first AI-powered premarital health compatibility engine. 
 Comprehensive health screening for couples — genetics, fertility, 
 chronic health, and lifestyle screening. Starting at ₹799.
 
-TrustyCare helps couples understand their health compatibility before 
+Slay helps couples understand their health compatibility before 
 marriage. Whether it's an arranged marriage, love marriage, or you're 
-planning a baby — TrustyCare gives you the clarity you need to start your 
+planning a baby — Slay gives you the clarity you need to start your 
 journey together with confidence.
 
 The assessment is 100% private, doctor-reviewed, and designed for 
 couples who want to be proactive about their future together.
 """,
-        "source_url": "https://trustycare.com/",
+        "source_url": "https://slay.health/",
         "page_type": "homepage",
         "objection_tags": [],
         "emotional_tags": ["empowerment", "confidence"],
@@ -38,7 +38,7 @@ couples who want to be proactive about their future together.
     # ──────────────────────────────────────────────────────────────
     {
         "content": """
-How TrustyCare Works — 3 Simple Steps:
+How Slay Works — 3 Simple Steps:
 
 Step 1: Choose Your Plan
 Select the screening package that fits your needs. We have plans for 
@@ -51,12 +51,12 @@ processed in NABL-accredited labs with the highest quality standards.
 Step 3: Get Your Compatibility Report
 Receive your private, doctor-reviewed health compatibility report. 
 Understand your combined health picture across 6 key areas. If needed, 
-speak with a TrustyCare advisor for personalized guidance.
+speak with a Slay advisor for personalized guidance.
 
 The entire process is private, simple, and designed to give you peace 
 of mind — not anxiety.
 """,
-        "source_url": "https://trustycare.com/",
+        "source_url": "https://slay.health/",
         "page_type": "how_it_works",
         "objection_tags": ["process_anxiety", "privacy"],
         "emotional_tags": ["reassurance", "simplicity"],
@@ -66,7 +66,7 @@ of mind — not anxiety.
     # ──────────────────────────────────────────────────────────────
     {
         "content": """
-TrustyCare Compatibility Score — 6 Key Areas:
+Slay Compatibility Score — 6 Key Areas:
 
 1. Fertility Readiness (25%) — Reproductive health indicators for 
    both partners. Not a fertility diagnosis — a readiness snapshot.
@@ -91,7 +91,7 @@ TrustyCare Compatibility Score — 6 Key Areas:
 
 Total: 50+ health markers analyzed. Results reviewed by MDs.
 """,
-        "source_url": "https://trustycare.com/",
+        "source_url": "https://slay.health/",
         "page_type": "assessment",
         "objection_tags": ["process_anxiety", "fear_of_results"],
         "emotional_tags": ["clarity", "empowerment"],
@@ -101,10 +101,10 @@ Total: 50+ health markers analyzed. Results reviewed by MDs.
     # ──────────────────────────────────────────────────────────────
     {
         "content": """
-TrustyCare Pricing Plans:
+Slay Pricing Plans:
 
 Essential Plan — ₹799 per person
-Advisory consultation with a TrustyCare health expert. Understand what 
+Advisory consultation with a Slay health expert. Understand what 
 screening makes sense for your situation. No lab work — just guidance.
 
 Compatibility Plan — ₹1,499 per couple (most popular)
@@ -118,7 +118,7 @@ with genetic counselor consultation and personalized health roadmap.
 All plans include: HIPAA-compliant data handling, private results 
 (shared only with the couple), and advisor support.
 """,
-        "source_url": "https://trustycare.com/",
+        "source_url": "https://slay.health/",
         "page_type": "pricing",
         "objection_tags": ["process_anxiety", "cost"],
         "emotional_tags": ["accessibility", "value"],
@@ -128,7 +128,7 @@ All plans include: HIPAA-compliant data handling, private results
     # ──────────────────────────────────────────────────────────────
     {
         "content": """
-Privacy at TrustyCare:
+Privacy at Slay:
 
 Your health data is yours. Period.
 
@@ -139,11 +139,11 @@ Your health data is yours. Period.
 - We never sell or share your information.
 - Reports are reviewed by licensed MDs before delivery.
 
-TrustyCare was built for people in sensitive life decisions. We know that 
+Slay was built for people in sensitive life decisions. We know that 
 privacy isn't a feature — it's a requirement. Your health story 
 stays between you and your partner.
 """,
-        "source_url": "https://trustycare.com/",
+        "source_url": "https://slay.health/",
         "page_type": "privacy",
         "objection_tags": ["privacy", "trust"],
         "emotional_tags": ["safety", "control"],
@@ -153,30 +153,30 @@ stays between you and your partner.
     # ──────────────────────────────────────────────────────────────
     {
         "content": """
-Who Uses TrustyCare:
+Who Uses Slay:
 
 Arranged Marriage Couples — You're meeting someone your family found. 
 You want to make sure you're compatible in every way — not just 
-horoscopes. TrustyCare helps you understand the health picture before 
+horoscopes. Slay helps you understand the health picture before 
 you commit. Focus: hereditary risk, family health history, baseline 
 chronic conditions, mental health.
 
 Love Marriage Couples — You've been together, but medical records 
-haven't come up. TrustyCare gives you a safe, structured way to have the 
+haven't come up. Slay gives you a safe, structured way to have the 
 health conversation together. Focus: STI panels, reproductive health, 
 genetic compatibility.
 
 Planning a Baby — You're married or engaged and thinking about kids. 
-TrustyCare helps you understand your combined fertility readiness and 
+Slay helps you understand your combined fertility readiness and 
 genetic carrier status before you start trying.
 
 Remarriage — Starting over and want to be more prepared this time. 
-TrustyCare gives you clarity without the awkwardness.
+Slay gives you clarity without the awkwardness.
 
 Concerned Parents — You want the best for your child's future. 
-TrustyCare gives you peace of mind that goes beyond the kundali.
+Slay gives you peace of mind that goes beyond the kundali.
 """,
-        "source_url": "https://trustycare.com/",
+        "source_url": "https://slay.health/",
         "page_type": "audience",
         "objection_tags": ["relevance", "timing"],
         "emotional_tags": ["belonging", "normalization"],
@@ -186,7 +186,7 @@ TrustyCare gives you peace of mind that goes beyond the kundali.
     # ──────────────────────────────────────────────────────────────
     {
         "content": """
-Frequently Asked Questions about TrustyCare:
+Frequently Asked Questions about Slay:
 
 Q: Is this like a medical test?
 A: It's a health screening — not a diagnosis. Think of it like a 
@@ -200,12 +200,12 @@ families, matchmakers, or anyone else. You decide what to share.
 
 Q: What if we find something concerning?
 A: That's actually the whole point — better to know now than after 
-the wedding. If something comes up, a TrustyCare advisor will walk you 
+the wedding. If something comes up, a Slay advisor will walk you 
 through what it means and what your options are. Most findings are 
 manageable with the right planning.
 
 Q: Is this only for arranged marriages?
-A: No. TrustyCare works for any couple — arranged, love, or mixed. The 
+A: No. Slay works for any couple — arranged, love, or mixed. The 
 screening is the same. The conversation just starts differently.
 
 Q: How long does it take?
@@ -218,7 +218,7 @@ advisors have helped hundreds of couples navigate this conversation.
 Sometimes it helps to frame it as something you're doing together, 
 not something you're doing TO them.
 """,
-        "source_url": "https://trustycare.com/",
+        "source_url": "https://slay.health/",
         "page_type": "faq",
         "objection_tags": ["process_anxiety", "privacy", "fear_of_results", "partner_resistance"],
         "emotional_tags": ["reassurance", "normalization", "empowerment"],
@@ -228,19 +228,19 @@ not something you're doing TO them.
     # ──────────────────────────────────────────────────────────────
     {
         "content": """
-TrustyCare Trust Signals:
+Slay Trust Signals:
 
-- 2,847+ couples have used TrustyCare
+- 2,847+ couples have used Slay
 - 4.8/5 average rating from couples
 - Reports reviewed by licensed MDs
 - NABL-accredited partner labs
 - HIPAA-compliant data handling
 - Advisor team available for follow-up
 
-TrustyCare Technologies Pvt Ltd — Incorporated July 2025.
+Slay Technologies Pvt Ltd — Incorporated July 2025.
 India's first AI-powered premarital health compatibility engine.
 """,
-        "source_url": "https://trustycare.com/",
+        "source_url": "https://slay.health/",
         "page_type": "social_proof",
         "objection_tags": ["trust"],
         "emotional_tags": ["credibility", "safety"],
@@ -283,7 +283,7 @@ appreciate it once they understand it's about preparation, not suspicion.
 situation exists whether you test for it or not. Testing doesn't create 
 problems. It reveals them early enough to plan for them.
 """,
-        "source_url": "https://trustycare.com/",
+        "source_url": "https://slay.health/",
         "page_type": "advisor_guide",
         "objection_tags": [
             "family_pressure",
@@ -320,7 +320,7 @@ This isn't because families don't care. It's because:
 - There's no cultural script for this conversation
 - Izzat (family honor) makes vulnerability feel dangerous
 
-TrustyCare exists to be that cultural script. A neutral, private, structured 
+Slay exists to be that cultural script. A neutral, private, structured 
 way to have the health conversation — without it feeling like an 
 accusation, a test, or a judgment.
 
@@ -328,7 +328,7 @@ Health compatibility is as important as horoscope compatibility.
 Maybe more — because unlike your kundali, your DNA actually determines 
 what your children inherit.
 """,
-        "source_url": "https://trustycare.com/",
+        "source_url": "https://slay.health/",
         "page_type": "cultural_context",
         "objection_tags": ["shame", "family_pressure", "cultural_resistance"],
         "emotional_tags": ["shame", "pressure", "normalization", "empowerment"],
@@ -338,7 +338,7 @@ what your children inherit.
     # ──────────────────────────────────────────────────────────────
     {
         "content": """
-Core Narrative Reframes for TrustyCare:
+Core Narrative Reframes for Slay:
 
 1. FROM "This will hurt the match" TO "This protects the match"
    → The assessment doesn't create problems. It reveals information 
@@ -367,7 +367,7 @@ Core Narrative Reframes for TrustyCare:
    families are deeply invested — this is when the conversation is 
    easiest and most empowering.
 """,
-        "source_url": "https://trustycare.com/",
+        "source_url": "https://slay.health/",
         "page_type": "reframes",
         "objection_tags": [
             "shame",
