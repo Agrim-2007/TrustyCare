@@ -1,7 +1,7 @@
 # TrustyBot — Objection Handling Agent for TrustyCare
 
 > Pre-marriage health assessment companion — warm, direct, culturally fluent.  
-> Built for [TrustyCare](https://trustycare.com) | Stack: FastAPI + LangGraph + Groq + React + FAISS
+> Stack: FastAPI + LangGraph + Groq + React + FAISS
 
 ---
 
@@ -214,6 +214,7 @@ If the quality gate scores a response below 82, it automatically regenerates wit
 5. A/B test 2 reframe strategies per objection
 6. Streaming responses (SSE) for real-time typing feel
 7. Voice input support for mobile users
+8. Add more testing layers
 
 ---
 
