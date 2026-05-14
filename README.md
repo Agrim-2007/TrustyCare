@@ -3,7 +3,7 @@
 > Pre-marriage health assessment companion — warm, direct, culturally fluent.  
 > Stack: FastAPI + LangGraph + Groq + React + FAISS
 
-----
+---
 
 ## 🎯 What This Is
 
